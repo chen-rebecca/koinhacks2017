@@ -1,5 +1,6 @@
 # Koin Hacks 2017
 Team: Rebecca Chen, Sophia Huang, Nicholas Hsu, Jonathan Yang
+
 Project: App that allows businesses/organizations to contact shelters and food banks when they have a surplus of food (to reduce food wastage)
 
 # Getting Started
