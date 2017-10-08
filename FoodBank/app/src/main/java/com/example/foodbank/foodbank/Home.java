@@ -20,6 +20,8 @@ public class Home extends AppCompatActivity {
         setContentView(R.layout.activity_home);
         Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar);
         setSupportActionBar(toolbar);
+        setTitle("Home");
+//        getActionBar().setIcon(R.drawable.ic_menu_light);
 
        FloatingActionButton fab = (FloatingActionButton) findViewById(R.id.fab);
         fab.setOnClickListener(new View.OnClickListener() {
@@ -45,9 +47,15 @@ public class Home extends AppCompatActivity {
         // as you specify a parent activity in AndroidManifest.xml.
         int id = item.getItemId();
 
-        //noinspection SimplifiableIfStatement
         if (id == R.id.action_settings) {
-            return true;
+            Intent i = new Intent(getApplicationContext(),SettingsActivity.class);
+            startActivity(i);
+        } else if (id == R.id.profile_settings) {
+            Intent i = new Intent(getApplicationContext(),ProfileActivity.class);
+            startActivity(i);
+        } else if (id == R.id.logout_settings) {
+            Intent i = new Intent(getApplicationContext(),LoginActivity.class);
+            startActivity(i);
         }
 
         return super.onOptionsItemSelected(item);
