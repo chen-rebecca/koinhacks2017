@@ -50,6 +50,12 @@ public class Home extends AppCompatActivity {
         if (id == R.id.action_settings) {
             Intent i = new Intent(getApplicationContext(),SettingsActivity.class);
             startActivity(i);
+        } else if (id == R.id.profile_settings) {
+            Intent i = new Intent(getApplicationContext(),ProfileActivity.class);
+            startActivity(i);
+        } else if (id == R.id.logout_settings) {
+            Intent i = new Intent(getApplicationContext(),LoginActivity.class);
+            startActivity(i);
         }
 
         return super.onOptionsItemSelected(item);
